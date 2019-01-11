@@ -4,7 +4,7 @@ If you would like to support me and my endevors feel free to [donate](https://ww
 
 # Installation
 Make sure to add the CfgCustomCover to your description.ext or else the script won't work
-```sqf
+```c++
 class CfgCustomCover
 {
  startCredits = 15;
@@ -20,13 +20,13 @@ class CfgCustomCover
 ```
 
 Then add the following to your description.ext to add the dialogs
-```sqf
+```c++
 #include "Custom-Cover-Script\dialog\defines.hpp"
 #include "Custom-Cover-Script\dialog\menu.hpp"
 ``` 
 
 Then if your description.ext already contains CfgFunctions then just add the following to your CfgFunctions
-```sqf
+```c++
 class customCover
 	{
 		class Dialog
@@ -50,7 +50,7 @@ class customCover
 ```
 
 If you don't already have a CfgFunctions then add this
-```sqf
+```c++
 class CfgFunctions
 {
 	class customCover
