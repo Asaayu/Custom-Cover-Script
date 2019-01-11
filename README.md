@@ -79,4 +79,5 @@ class CfgFunctions
 Then copy over the Custom-Cover-Script folder and make sure it includes the init.sqf file.
 
 IF YOU WHITELIST REMOTEXECS MAKE SURE TO WHITELIST "customCover_fnc_transferCredits" TO ALLOW PLAYERS TO TRANSFER CREDITS!
+
 Then your good to go!
