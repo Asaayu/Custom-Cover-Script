@@ -3,7 +3,7 @@ This is the script integration of this mod: [Asaayu's Custom Cover Mod](https://
 If you would like to support me and my endevors feel free to [donate](https://www.paypal.me/asaayu) any support is appreacted. 
 
 # Installation
-Make sure to add the CfgCustomCover to your description.ext or else the script won't work
+Make sure to add the CfgCustomCover to your description.ext or else the script won't work. This is the bit that you can edit to your liking.
 ```c++
 class CfgCustomCover
 {
@@ -75,3 +75,6 @@ class CfgFunctions
 	};
 };
 ```
+
+Then copy over the Custom-Cover-Script folder and make sure it includes the init.sqf file.
+Then your good to go!
