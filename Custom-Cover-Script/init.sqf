@@ -52,7 +52,7 @@ allowPlacedItemPickup = getNumber(missionConfigFile >> "CfgCustomCover" >> "allo
         _cost = _this#1;
         [format[""<t font = 'PuristaBold' size = '.5'>COLLECTING %1 CREDITS</t>"",_cost],-1,0,5,0,0,35919] spawn BIS_fnc_dynamicText;
         sleep 6;
-        if(alive player)exitWith{};
+        if(!alive player)exitWith{};
         deleteVehicle _object;
         customCover_credits = customCover_credits + _cost;
         [format[""<t font='PuristaSemiBold' align='Left' size = '.5'>+%1 credit(s)</t>"",_cost],0.005 * safezoneW + safezoneX,0.9 * safezoneH + safezoneY,4,1,0.25,(25896 + (round random 12000))] spawn BIS_fnc_dynamicText;
@@ -76,7 +76,7 @@ allowPlacedItemPickup = getNumber(missionConfigFile >> "CfgCustomCover" >> "allo
         _cost = _this#1;
         [format[""<t font = 'PuristaBold' size = '.5'>COLLECTING %1 CREDITS</t>"",_cost],-1,0,5,0,0,35919] spawn BIS_fnc_dynamicText;
         sleep 6;
-        if(alive player)exitWith{};
+        if(!alive player)exitWith{};
         deleteVehicle _object;
         customCover_credits = customCover_credits + _cost;
         [format[""<t font='PuristaSemiBold' align='Left' size = '.5'>+%1 credit(s)</t>"",_cost],0.005 * safezoneW + safezoneX,0.9 * safezoneH + safezoneY,4,1,0.25,(25896 + (round random 12000))] spawn BIS_fnc_dynamicText;
